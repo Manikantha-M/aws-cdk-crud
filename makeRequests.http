@@ -1,0 +1,27 @@
+@URL = https://a528rf1g6b.execute-api.eu-north-1.amazonaws.com/
+
+### Get all users
+GET {{URL}}/users
+
+### Create a user
+POST {{URL}}/users
+Content-Type: application/json
+
+{
+    "name":"coding addict"
+}
+
+### Get a user
+GET {{URL}}/users/1
+
+### Update a user
+PUT {{URL}}/users/1
+Content-Type: application/json
+
+{
+    "name":"coding addict",
+    "email": "coding@addict.com"
+}
+
+### Delete user
+DELETE {{URL}}/users/1

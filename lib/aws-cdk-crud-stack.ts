@@ -28,9 +28,9 @@ export class AwsCdkCrudStack extends cdk.Stack {
     const routes = [
       {path:'/users', method: apigateway.HttpMethod.GET, name:'GetAllUsers'},
       {path:'/users', method: apigateway.HttpMethod.POST, name:'createUser'},
-      {path:'/users/{id}', method: apigateway.HttpMethod.PUT, name:'GetUser'},
-      {path:'/users/{id}', method: apigateway.HttpMethod.GET, name:'updateUser'},
-      {path:'/users/{id}', method: apigateway.HttpMethod.GET, name:'DeleteUser'},
+      {path:'/users/{id}', method: apigateway.HttpMethod.GET, name:'GetUser'},
+      {path:'/users/{id}', method: apigateway.HttpMethod.PUT, name:'updateUser'},
+      {path:'/users/{id}', method: apigateway.HttpMethod.DELETE, name:'DeleteUser'},
     ];
     routes.forEach(({path, method, name})=>{
       httpApi.addRoutes({
