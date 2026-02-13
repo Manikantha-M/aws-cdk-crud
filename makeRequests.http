@@ -15,7 +15,7 @@ Content-Type: application/json
 GET {{URL}}/users/6d6f8c2f-9988-4afd-a289-4fefa585b02b
 
 ### Update a user
-PUT {{URL}}/users/1
+PUT {{URL}}/users/6d6f8c2f-9988-4afd-a289-4fefa585b02b
 Content-Type: application/json
 
 {
